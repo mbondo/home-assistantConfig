@@ -1,0 +1,12 @@
+- name: 'Ytterdør'
+  address: '4/0/27'
+  state_address: '4/1/27'
+  
+- name: 'drivhus_varme'
+  address: '5/0/2'
+  state_address: '5/1/2'
+    
+
+- name: 'fancoil_garasje'
+  address: '5/0/3'
+  state_address: '5/1/3'

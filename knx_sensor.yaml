@@ -1,0 +1,9 @@
+- name: heating.valve.setpkt.stue
+  state_address: '1/5/3'
+  type: 'percent'
+- name: heating.valve.setpkt.gang
+  state_address: '1/1/3'
+  type: 'percent'
+- name: heating.valve.setpkt.sovoppe
+  state_address: '1/4/3'
+  type: 'percent'

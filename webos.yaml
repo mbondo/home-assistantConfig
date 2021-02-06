@@ -1,0 +1,16 @@
+host: 192.168.2.58
+#name: LG OLED Stue
+#filename: webostv.conf
+#timeout: 5
+turn_on_action:
+  service: wake_on_lan.send_magic_packet
+  data:
+    mac: "38-8c-50-D2-19-46"
+#customize:
+#  sources:
+#    - livetv
+#    - youtube
+#    - makotv
+#    - netflix
+#    - chromecast
+#    - spillkonsoll

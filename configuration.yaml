@@ -1,0 +1,46 @@
+
+# Configure a default setup of Home Assistant (frontend, api, etc)
+default_config:
+
+homeassistant: 
+  packages: !include_dir_named packages
+
+# Text to speech
+tts:
+  - platform: google_translate
+
+group: !include groups.yaml
+automation: !include automations.yaml
+script: !include scripts.yaml
+scene: !include scenes.yaml
+#input_select: !include input_select.yaml
+
+http:
+  ssl_certificate: /ssl/fullchain.pem
+  ssl_key: /ssl/privkey.pem
+
+wake_on_lan:
+
+webostv: !include webos.yaml
+
+media_player: #!include mediaplayer.yaml
+
+knx: !include knx.yaml
+
+
+#light: !include lights.yaml
+
+frontend:
+  themes: !include_dir_merge_named themes
+
+
+# lovelace_gen:
+
+lovelace:
+  mode: yaml
+  resources: !include lovelace/hacs-resources.yaml
+
+
+#sensor: !include sensors.yaml
+
+#binary_sensor: !include binary_sensors.yaml
