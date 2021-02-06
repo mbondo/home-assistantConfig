@@ -1,0 +1,114 @@
+title: Lights
+icon: mdi:lightbulb-on
+cards:
+  - type: horizontal-stack
+    cards:
+      - type: entity-button
+        name: Nede
+        entity: light.gang_nede
+        icon: mdi:home-floor-0
+        tap_action:
+          action: none
+        hold_action:
+          action: call-service
+          service: light.turn_off
+          service_data:
+            entity_id: light.gang_nede
+      - type: entity-button
+        name: Oppe
+        entity: light.stue_alle
+        icon: mdi:home-floor-1
+        tap_action:
+          action: none
+        hold_action:
+          action: call-service
+          service: light.turn_off
+          service_data:
+            entity_id: light.stue_alle
+
+  - type: vertical-stack
+    cards:
+    - type: entities
+      title: Oppe
+      show_header_toggle: false
+      entities:
+        - entity: light.kjokken_hoyskap
+          type: "custom:slider-entity-row.js"
+          icon: mdi:track-light
+          name: Kjøkken Høyskap
+          toggle: true
+        - entity: light.kjokken_benk
+          type: custom:slider-entity-row
+          icon: mdi:track-light
+          name: Kjøkkenbenk
+          toggle: true
+        - entity: light.kjokken_oy
+          name: Kjokkenøy
+          icon: mdi:ceiling-light
+          toggle: true
+        - entity: light.kjokken_led
+          type: custom:slider-entity-row
+          icon: mdi:track-light
+          name: Kjøkken LED-stripe
+          toggle: true
+        - entity: light.stue_lampe
+          icon: mdi:globe-light
+          name: Spisebord
+          toggle: true
+    - type: entities
+      title: Nede
+      show_header_toggle: false
+      entities:
+        - entity: light.gang_nede
+          type: custom:slider-entity-row
+          icon: mdi:track-light
+          name: Koridor
+          toggle: true
+        - entity: light.badnede_taklys
+          type: custom:slider-entity-row
+          icon: mdi:spotlight
+          name: Bad nede tak
+          toggle: true
+        - entity: light.badnede_lamper
+          type: custom:slider-entity-row
+          icon: mdi:wall-sconce-flat
+          name: Bad nede lamper
+          toggle: true
+        - entity: light.badnede_speillys
+          type: custom:slider-entity-row
+          icon: mdi:wall-sconce-flat
+          name: badnede speillys
+          toggle: true
+        - entity: light.vaskerom_alle
+          type: custom:slider-entity-row
+          icon: mdi:wall-sconce-flat
+          name: Vaskerom
+          toggle: true
+        - entity: light.sovnede_ost
+          type: custom:slider-entity-row
+          icon: mdi:spotlight
+          name: Sov Håkon
+          toggle: true
+        - entity: light.sovnede_vest
+          type: custom:slider-entity-row
+          icon: mdi:spotlight
+          name: Sov Vebjørn
+          toggle: true
+        - entity: light.tvstue_alle
+          type: custom:slider-entity-row
+          icon: mdi:spotlight
+          name: tv-stue alle
+          toggle: true
+        - entity: light.tvstue_rgb_brightness
+          icon: mdi:led-strip-variant
+          name: tv-stue LED
+          toggle: true
+    - type: entities
+      title: Utendors
+      show_header_toggle: false
+      entities:
+        - entity: light.utelys_nede
+          type: custom:slider-entity-row
+          icon: mdi:spotlight
+          name: utelys nede
+          toggle: true

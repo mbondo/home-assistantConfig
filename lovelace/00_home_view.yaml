@@ -1,0 +1,20 @@
+title: Home
+icon: mdi:home-lock
+cards:
+  - type: vertical-stack
+    cards:
+    - type: entities
+      title: Ytterdøra
+      show_header_toggle: false
+      entities:
+        - entity: switch.ytterdor
+          icon: mdi:home-lock
+          name: lås
+          toggle: true
+#    - type: entities
+#      title: Garasje
+#      show_header_toggle: false
+#      entities:
+#        - entity: cover.garage_gate
+#          icon: mdi:home-lock
+#          name: Garasjeport
